@@ -1,0 +1,29 @@
+h1 {
+  color: #700d0d;
+}
+
+p,
+label {
+  color: #685e5e;
+}
+
+input {
+  border-color: #6da0f5;
+}
+
+.img__game {
+  width: 50px;
+  height: 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  color: #d12038;
+  background-color: #ebd7da;
+  border-color: #e19ca7;
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games Top</title>
+
+    <link rel="icon" type="image/png" href="/img/games-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container mb-5" id="cadgames">
+      <div class="header">
+        <h1 class="text-center mb-4">Cadastro de Jogos</h1>
+        <img
+          class="img__game"
+          src="./img/game-console.png"
+          alt="Imagem de uma televisao e manete de video game"
+        />
+      </div>
+      <form name="register" onsubmit="event.preventDefault()">
+        <div class="row">
+          <div class="mb-3 col">
+            <label for="codGamer" class="form-label">Código do jogo</label>
+            <input type="text" class="form-control" id="codGamer" name="cod" />
+          </div>
+
+          <div class="mb-3 col">
+            <label for="nameGame" class="form-label">Nome do Jogo</label>
+            <input type="text" class="form-control" id="nameGame" name="name" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="mb-3 col">
+            <label for="fabricanteGame" class="form-label">Fabricante</label>
+            <input
+              type="text"
+              class="form-control"
+              id="fabricanteGame"
+              name="manufacturer"
+            />
+          </div>
+
+          <div class="mb-3 col">
+            <label for="yearGame" class="form-label">Data de lançamento</label>
+            <input
+              type="text"
+              class="form-control"
+              id="yearGame"
+              placeholder="DD de MM de AA"
+              name="date"
+            />
+          </div>
+        </div>
+
+        <p>Selecione o Gênero</p>
+        <div class="row mt-7">
+          <div class="col form-check ms-1">
+            <input
+              type="radio"
+              id="radioGFps"
+              name="radioGender"
+              class="form-check-input"
+              value="fps"
+            />
+            <label for="radioGFps" class="form-label">FPS</label>
+          </div>
+          <div class="col form-check">
+            <input
+              type="radio"
+              id="radioGFpa"
+              name="radioGender"
+              class="form-check-input"
+              value="fpa"
+            />
+            <label for="radioGFpa" class="form-label"> FPA</label>
+          </div>
+          <div class="col form-check">
+            <input
+              type="radio"
+              id="radioGPvp"
+              name="radioGender"
+              class="form-check-input"
+              value="pvp"
+            />
+            <label for="radioGPvp" class="form-label">PVP</label>
+          </div>
+          <div class="col form-check">
+            <input
+              type="radio"
+              id="radioGRts"
+              name="radioGender"
+              class="form-check-input"
+              value="rts"
+            />
+            <label for="radioGRts" class="form-label">RTS</label>
+          </div>
+
+          <div class="col form-check">
+            <input
+              type="radio"
+              id="radioGMoba"
+              name="radioGender"
+              class="form-check-input"
+              value="moba"
+            />
+            <label for="radioGMoba" class="form-label">Moba</label>
+          </div>
+
+          <div class="col form-check">
+            <input
+              type="radio"
+              id="radioGRpg"
+              name="radioGender"
+              class="form-check-input"
+              value="rpg"
+            />
+            <label for="radioGRpg" class="form-label">RPG</label>
+          </div>
+
+          <div class="col form-check">
+            <input
+              type="radio"
+              id="radioGMmorpg"
+              name="radioGender"
+              class="form-check-input"
+              value="mmo"
+            />
+            <label for="radioGMmorpg" class="form-label">MMORPG</label>
+          </div>
+        </div>
+        <p>Como pode ser jogado?</p>
+        <div class="row mt-3">
+          <div class="col form-check ms-1">
+            <input
+              type="radio"
+              id="radioGOn"
+              name="radioOneOff"
+              class="form-check-input"
+              value="on"
+            />
+            <label for="radioGOn" class="form-label">Online</label>
+          </div>
+          <div class="col form-check">
+            <input
+              type="radio"
+              id="radioGOff"
+              name="radioOneOff"
+              class="form-check-input"
+              value="off"
+            />
+            <label for="radioGOff" class="form-label"> Offline</label>
+          </div>
+          <div class="col form-check">
+            <input
+              type="radio"
+              id="radioGOneOff"
+              name="radioOneOff"
+              class="form-check-input"
+              value="oneoff"
+            />
+            <label for="radioGOneOff" class="form-label"
+              >Online e Offline</label
+            >
+          </div>
+        </div>
+        <p>Quantos Jogadores são permitidos?</p>
+        <div class="row mt-3">
+          <div class="col form-check ms-3">
+            <input
+              type="radio"
+              id="radioGOne"
+              name="numberOfPlayers"
+              class="form-check-input"
+              value="one"
+            />
+            <label for="radioGOne" class="form-label">1 </label>
+          </div>
+          <div class="col form-check">
+            <input
+              type="radio"
+              id="radioGTwo"
+              name="numberOfPlayers"
+              class="form-check-input"
+              value="two"
+            />
+            <label for="radioGTwo" class="form-label"> 2</label>
+          </div>
+          <div class="col form-check">
+            <input
+              type="radio"
+              id="radioGMoreTwo"
+              name="numberOfPlayers"
+              class="form-check-input"
+              value="moretwo"
+            />
+            <label for="radioGMoreTwo" class="form-label">Mais de 2</label>
+          </div>
+        </div>
+
+        <div class="col-auto d-flex justify-content-center">
+          <button
+            type="submit"
+            onclick="validationForm(); insert()"
+            class="btn btn-primary mt-3"
+          >
+            Cadastrar
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
